@@ -18,6 +18,7 @@ public class AgeCalculator{
 		java.util.Date nowDate = new java.util.Date();
 		String currentYear = formatNowYear.format(nowDate);
 		System.out.println(currentYear);
+	
 
 
 	}
