@@ -1,25 +1,10 @@
-import java.util.*; //import date
-import java.time.*;
-import java.text.SimpleDateFormat;
-
+import java.time.Year;
 
 public class AgeCalculator{
-	public static void main(String[] args){
-		String date_of_birth = "01/01/1999"; 
-		Date SysDateObj = new Date(); //Create a date object
-		System.out.println(SysDateObj);//Print current date before formatting
-
-		SimpleDateFormat myFormatObj = new SimpleDateFormat("dd/MM/yyyy");
-
-		String formattedDate = myFormatObj.format(SysDateObj);
-		System.out.println("After Formatting: " + formattedDate);
-
-		SimpleDateFormat formatNowYear = new SimpleDateFormat("yyyy");
-		java.util.Date nowDate = new java.util.Date();
-		String currentYear = formatNowYear.format(nowDate);
-		System.out.println(currentYear);
-	
-
+	public static long calc(long dob_year){
+		long current_year= Year.now().getValue();
+		long age=current_year-dob_year;
+		return age;
 
 	}
 }
