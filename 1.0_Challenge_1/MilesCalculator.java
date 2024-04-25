@@ -1,10 +1,7 @@
 public class MilesCalculator{
-	public static void main(String args[]){
-		int distance = 50;
-        
+	public static double calc(double distance_from_store){
         //distance conversion to miles
 		double distance_in_miles = distance_from_store * 0.621371;
-
-		System.out.println("The distance in Miles: " + distance_in_miles);
+		return distance_in_miles;
 	}
 }
