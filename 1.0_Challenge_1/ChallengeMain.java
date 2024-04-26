@@ -1,7 +1,7 @@
 public class ChallengeMain{
 	public static void main(String[] args){
 		String name = Prompter.prompt("What is your name");
-		String surname = Prompter.prompt("What is your name");
+		String surname = Prompter.prompt("What is your surname");
 		
 		String date_of_birth;
 		while (true) {
@@ -42,7 +42,9 @@ public class ChallengeMain{
 				break;
 			}
 		}
+		//Convert distance to Double data type
 		double distance=Double.parseDouble(distance_from_store);
+		//Invoke MilesCalculator class and calc method to convert distance to miles
 		double distance_in_miles=MilesCalculator.calc(distance);
 
 		//Pass arguments to printer class for output
