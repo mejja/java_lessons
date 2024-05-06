@@ -9,8 +9,7 @@ public class Printer{
 		//Extra points
 		System.out.println("The age in Hexadecimal is "+ Long.toHexString(age)  + " Hex Old" );
 		System.out.println("The age in Hexadecimal is "+ Long.toBinaryString(age)  + " Binary  Old" );
-		long 
-		Integer
+		
 	}
 
 }
