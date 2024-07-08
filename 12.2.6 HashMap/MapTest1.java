@@ -14,7 +14,9 @@ public class MapTest1 {
 		hashMap.put("key6", "F");
 		
 		Set keySet = hashMap.keySet();		
-		Collection values = hashMap.values();		
+		Collection values = hashMap.values();
+
+				
 		
 	}	
 }
