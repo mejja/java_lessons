@@ -9,7 +9,6 @@ public class IfTest7 {
                 if(a>-50){
                     System.out.println("COOL");
                 }
-                
             }
         }
     }
