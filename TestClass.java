@@ -1,5 +1,6 @@
-public class TestClass extends ClassTwo{
+public class TestClass extends ClassTwo implements interface X{
 	public static void main(String[] args){
+		car instcar= new car();
 
 	}
 	public void method1(){
