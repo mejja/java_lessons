@@ -6,6 +6,6 @@ public class TestClass{
 		System.out.println(Arrays.binarySearch(age, 14));//2
 		System.out.println(Arrays.binarySearch(age, 24));//5
 		System.out.println(Arrays.binarySearch(age, 5));//-1
-		System.out.println(Arrays.binarySearch(age, 30));//-7
+		System.out.println(Arrays.binarySearch(age, 30));
 	}
 }
