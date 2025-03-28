@@ -6,7 +6,7 @@ public class BlockTest2 {
         }
         label2:{
             int i =1;
-            System.out.println("Block 2 i = "+ i);            
+            System.out.println("Block 2 i = "+ i);
         }
     }
 }
