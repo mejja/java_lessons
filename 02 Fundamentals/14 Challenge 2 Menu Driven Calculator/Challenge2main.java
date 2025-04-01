@@ -5,7 +5,5 @@ public class Challenge2main{
 		double op1 = Prompter.prompt("Enter the first Number!");
 		char operator = Prompter.promptOper("Enter the Operator: (+, -, *, /)");
 		double op2 = Prompter.prompt("Enter the second Number!");
-
-
-	} 
+	}
 }
