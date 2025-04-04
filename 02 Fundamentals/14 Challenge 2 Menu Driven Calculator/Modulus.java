@@ -1,6 +1,6 @@
 public class Modulus{
-	public static int mod(int op1, int op2){
-		int mod = op1 % op2 ;
+	public static double mod(double op1, double op2){
+		int mod = (int)op1 % (int)op2;
 		return mod;
 	}
 }
