@@ -3,13 +3,13 @@ import java.util.*;
 public class ArrayListTest11{
     public static void main(String[] args) {
 
-        List<String> myNameList = new ArrayList<String>(); 
-        // Adding elements to object of List interface Custom inputs 
-        myNameList.add(0, "Major"); 
+        List<String> myNameList = new ArrayList<String>();
+        // Adding elements to object of List interface Custom inputs
+        myNameList.add(0, "Major");
         myNameList.add(1, "Kiema");
-        myNameList.add(2, "Mbandi"); 
+        myNameList.add(2, "Mbandi");
 
-        List<String> dadNameList = new ArrayList<String>(); 
+        List<String> dadNameList = new ArrayList<String>();
         dadNameList.add(0, "Kiema");
         dadNameList.add(1, "Mbandi");
 
