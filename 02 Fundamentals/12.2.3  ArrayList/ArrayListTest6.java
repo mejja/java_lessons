@@ -8,11 +8,9 @@ public class ArrayListTest6 {
         name.add("Major");
         name.add("Kiema");
         name.add("Mbandi");
-           
+        name.add(e:"Amy");
             System.out.println(name);
-
             System.out.println(name.contains("Major"));//true
             System.out.println(name.contains("Majork"));//false
-        
     }
 }
