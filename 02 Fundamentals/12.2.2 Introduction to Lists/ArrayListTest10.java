@@ -9,6 +9,7 @@ public class ArrayListTest10{
         names.add(1, "Mbandi");
         names.add(2, "Amy");
         names.add(3, "Kiema");
+        name.add(4, "Kitonga");
 
         ListIterator<String> itr=names.listIterator();
         System.out.println("Traversing elements in forward direction");
