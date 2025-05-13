@@ -1,18 +1,21 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
-public class ArrayListTest5{
+public class ArrayListTest5 {
     public static void main(String[] args) {
+        List<String> names = new ArrayList<>(); 
 
-        List<String> names = new ArrayList<String>();
-        // Adding elements to object of List interface Custom inputs
-        names.add(0, "Major");
-        names.add(1, "Mbandi");
-        names.add(2, "Amy");
-        names.add(3, "Kiema");
-        names.add(4, "Kitonga");
-        //List before clearance
-        System.out.println(names);
-        //Get the size of the List
-        System.out.println(names.size());
+        // Adding elements to the list
+        names.add("Major");
+        names.add("Mbandi");
+        names.add("Amy");
+        names.add("Kiema");
+        names.add("Kitonga");
+
+        // Print the list before clearance
+        System.out.println("List before clearance: " + names);
+
+        // Get and print the size of the list
+        System.out.println("Size of the list: " + names.size());
     }
 }
