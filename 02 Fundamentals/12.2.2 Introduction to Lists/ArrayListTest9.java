@@ -11,9 +11,7 @@ public class ArrayListTest9{
 
         List<String> dadName = new ArrayList<String>(); 
         dadName.add(0, "Kiema");
-        dadName.add(1, "Mbandi");  
-        dadName.add(2, "Test");  
-
+        dadName.add(1, "Mbandi");   
 
         //check matching elements using containsAll
         System.out.println(myName.containsAll(dadName));//true
