@@ -14,11 +14,12 @@ public class ArrayListTest9{
         dadName.add(1, "Mbandi");
 
         List<String> mumName = new ArrayList<String>(); 
-        dadName.add(0, "Florence");
-        dadName.add(1, "Betty");
+        mumName.add(0, "Florence");
+        mumName.add(1, "Betty");
 
         //check matching elements using containsAll
         System.out.println(myName.containsAll(dadName));//true
         System.out.println(dadName.containsAll(myName));//false
+        System.out.println(mumName.containsAll(myName));//false
     }
 }
