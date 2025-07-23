@@ -13,7 +13,7 @@ public class Main {
                 maxtemp = currentTemp;
             }
         }
-        
+
         return maxtemp;
     }
 
