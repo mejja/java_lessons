@@ -1,0 +1,15 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class MapsEg1 {
+	public static void main(String[] args) {
+		
+		Map<String, Money> shareMap = new HashMap<String,Money>();
+		
+		
+		shareMap.put("Mr X",new Money(Currency.USD, 100));
+		
+		
+		System.out.println("shareMap = "+shareMap);
+	}
+}
