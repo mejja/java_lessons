@@ -1,22 +1,19 @@
 import java.util.*;
 
-public class ArrayListTest3{
+public class ArrayListTest3 {
     public static void main(String[] args) {
+        // Initialize and populate the list
+        List<String> names = new ArrayList<>();
+        Collections.addAll(names, "Major", "Mbandi", "Amy", "Kiema");
 
-        List<String> names = new ArrayList<String>(); 
-        // Adding elements to object of List interface Custom inputs 
-        names.add(0, "Major"); 
-        names.add(1, "Mbandi");
-        names.add(2, "Amy"); 
-        names.add(3, "Kiema"); 
-        
-        System.out.println(names);
+        System.out.println("Original list: " + names);
 
-        //remove element by index position i.e 1
-        names.remove(1);
-        System.out.println(names);
-        //remove  by matching value of elements 
+        // Remove element by index
+        names.remove(1); // Removes "Mbandi"
+        System.out.println("After removing index 1: " + names);
+
+        // Remove element by value
         names.remove("Kiema");
-        System.out.println(names);  
+        System.out.println("After removing 'Kiema': " + names);
     }
 }
