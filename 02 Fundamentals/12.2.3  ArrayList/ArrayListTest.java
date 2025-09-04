@@ -1,13 +1,18 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class ArrayListTest {
     public static void main(String[] args) {
 
-        ArrayList<String> list = new ArrayList<>();
-        list.add("banana");
-        list.add("apple");
-        list.add("orange");
-            System.out.println(list);
+        // Initialize an ArrayList to store fruit names
+        ArrayList<String> fruits = new ArrayList<>();
 
+        // Add fruit names to the list
+        fruits.add("banana");
+        fruits.add("apple");
+        fruits.add("orange");
+        fruits.add("mellon");
+
+        // Print the list of fruits to the console
+        System.out.println("Available fruits: " + fruits);
     }
 }
