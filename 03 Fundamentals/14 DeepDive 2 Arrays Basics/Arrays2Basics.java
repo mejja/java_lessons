@@ -12,6 +12,6 @@ public class Arrays2Basics{
 		for (int j=0; j<arr.length; j++){
 			int increment= arr[j]+1;
 			System.out.print(increment + " ");
-		}	
+		}
 	}
 }
