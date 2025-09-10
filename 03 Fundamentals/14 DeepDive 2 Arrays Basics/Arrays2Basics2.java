@@ -14,6 +14,6 @@ public class Arrays2Basics2{
 			int increment= arr[j]+1;
 			if((increment % 2==0) && (increment % 11 == 0))
 			System.out.print(increment + " ");
-		}	
+		}
 	}
 }
