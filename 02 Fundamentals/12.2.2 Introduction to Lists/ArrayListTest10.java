@@ -4,7 +4,6 @@ import java.util.ListIterator;
 
 public class ArrayListTest10 {
     public static void main(String[] args) {
-
         // Initialize a list of names
         List<String> names = new ArrayList<>();
 
