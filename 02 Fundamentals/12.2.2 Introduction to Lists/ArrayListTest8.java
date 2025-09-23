@@ -17,7 +17,6 @@ public class ArrayListTest8{
         //merging two arrays using addAll().
         myName.addAll(dadName);
         //myName list after merging with dadaName
-        System.out.println(myName);//t 
-     
+        System.out.println(myName);//t
     }
 }
