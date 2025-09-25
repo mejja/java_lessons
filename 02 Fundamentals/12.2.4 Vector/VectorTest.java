@@ -1,13 +1,15 @@
-import java.util.*;
+import java.util.Vector;
 
 public class VectorTest {
     public static void main(String[] args) {
 
-        Vector<String> v = new Vector<>();
-        
-        v.add("banana");
-           
-        System.out.println(v);
-        
+        // Create a Vector to store fruit names
+        Vector<String> fruits = new Vector<>();
+
+        // Add a fruit to the vector
+        fruits.add("banana");
+
+        // Print the contents of the vector
+        System.out.println("Fruits in the vector: " + fruits);
     }
 }
