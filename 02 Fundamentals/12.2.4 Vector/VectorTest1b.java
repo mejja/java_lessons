@@ -1,23 +1,28 @@
-import java.util.*;
+import java.util.Vector;
 
 public class VectorTest1b {
     public static void main(String[] args) {
 
-        Vector<String> v = new Vector<>();
-        
-        v.add("banana");
-        v.add("apples");
-        v.add("Pineapples");
-        v.add("mangoes");
-        v.add("oranges");
-        v.add("watermelon");
-        v.add("grapes");
-           
-        System.out.println(v);
+        // Create a Vector to store fruit names
+        Vector<String> fruits = new Vector<>();
 
-        //remove banana in the vector
-        v.remove(0);
-        
-        System.out.println(v);
+        // Add various fruits to the vector
+        fruits.add("banana");
+        fruits.add("apples");
+        fruits.add("Pineapples");
+        fruits.add("mangoes");
+        fruits.add("oranges");
+        fruits.add("watermelon");
+        fruits.add("grapes");
+
+        // Display the original list of fruits
+        System.out.println("Original fruit list: " + fruits);
+
+        // Remove the first fruit ("banana") from the vector
+        fruits.remove(0);
+
+        // Display the updated list after removal
+        System.out.println("Updated fruit list (after removing 'banana'): " + fruits);
     }
 }
+
