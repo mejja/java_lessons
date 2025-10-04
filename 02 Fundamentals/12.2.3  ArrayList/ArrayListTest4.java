@@ -1,19 +1,23 @@
-import java.util.*;
+import java.util.ArrayList;
 
 public class ArrayListTest4 {
     public static void main(String[] args) {
 
-        ArrayList<String> name = new ArrayList<>();
-        
-        name.add("Major");
-        name.add("Kiema");
-        name.add("Mbandi");
-           
-            System.out.println(name);
+        // Create an ArrayList to store names
+        ArrayList<String> names = new ArrayList<>();
 
-        name.clear();
+        // Add names to the list
+        names.add("Major");
+        names.add("Kiema");
+        names.add("Mbandi");
 
-            System.out.println(name);
-        
+        // Display the original list of names
+        System.out.println("Original list: " + names);
+
+        // Clear all elements from the list
+        names.clear();
+
+        // Display the list after clearing its contents
+        System.out.println("List after clearing: " + names);
     }
 }
