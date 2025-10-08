@@ -1,21 +1,24 @@
-import java.util.*;
+import java.util.Vector;
 
 public class VectorTest1f {
     public static void main(String[] args) {
 
-        Vector<String> v = new Vector<>();
-        
-        v.add("banana");
-        v.add("apples");
-        v.add("Pineapples");
-        v.add("mangoes");
-        v.add("oranges");
-        v.add("watermelon");
-        v.add("grapes");
-           
-        System.out.println(v);
+        // Create a Vector to store fruit names
+        Vector<String> fruits = new Vector<>();
 
-        System.out.println("Get Element At Index  1"); 
-        System.out.println(v.get(1));
+        // Add various fruits to the vector
+        fruits.add("banana");
+        fruits.add("apples");
+        fruits.add("Pineapples");
+        fruits.add("mangoes");
+        fruits.add("oranges");
+        fruits.add("watermelon");
+        fruits.add("grapes");
+
+        // Display the full list of fruits
+        System.out.println("Fruit list: " + fruits);
+
+        // Retrieve and display the fruit at index 1
+        System.out.println("Fruit at index 1: " + fruits.get(1)); // Expected: "apples"
     }
 }
