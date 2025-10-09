@@ -1,26 +1,28 @@
-import java.util.*;
+import java.util.Vector;
 
 public class VectorTest1g {
     public static void main(String[] args) {
 
-        Vector<String> f = new Vector<>();
-        
-        f.add("banana");
-        f.add("apples");
-        f.add("mangoes");
-        f.add("oranges");
+        // Create a Vector to store fruits
+        Vector<String> fruits = new Vector<>();
+        fruits.add("banana");
+        fruits.add("apples");
+        fruits.add("mangoes");
+        fruits.add("oranges");
 
-        System.out.println("F Before merging"); 
-        System.out.println(f);
+        System.out.println("Fruits before merging:");
+        System.out.println(fruits);
 
-        Vector<String> v = new Vector<>();
-        v.add("sukumawiki");
-        v.add("cabbage");
-        v.add("spinach");
-           
-        f.addAll(v);
+        // Create a Vector to store vegetables
+        Vector<String> vegetables = new Vector<>();
+        vegetables.add("sukumawiki");
+        vegetables.add("cabbage");
+        vegetables.add("spinach");
 
-        System.out.println("F vector after merging with v"); 
-        System.out.println(f);
+        // Merge vegetables into fruits vector
+        fruits.addAll(vegetables);
+
+        System.out.println("Fruits vector after merging with vegetables:");
+        System.out.println(fruits);
     }
 }
