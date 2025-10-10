@@ -1,25 +1,29 @@
-import java.util.*;
+import java.util.Vector;
 
 public class VectorTest1h {
     public static void main(String[] args) {
 
-        Vector<String> f = new Vector<>();
-        
-        f.add("banana");
-        f.add("apples");
-        f.add("mangoes");
-        f.add("oranges");
-        f.add("grapes");
-        f.add("tomato");
+        // Create a Vector f containing a mix of fruits
+        Vector<String> fruits = new Vector<>();
+        fruits.add("banana");
+        fruits.add("apples");
+        fruits.add("mangoes");
+        fruits.add("oranges");
+        fruits.add("grapes");
+        fruits.add("tomato");
 
-        Vector<String> f1 = new Vector<>();
-        f1.add("banana");
-        f1.add("apples");
-        f1.add("mangoes");
+        // Create a smaller Vector f1 with a subset of fruits
+        Vector<String> subsetFruits = new Vector<>();
+        subsetFruits.add("banana");
+        subsetFruits.add("apples");
+        subsetFruits.add("mangoes");
 
-        System.out.println("Check if f1 is a subset of F"); 
-        System.out.println(f.containsAll(f1));//true
-        System.out.println("Check if F is a subset of f1"); 
-        System.out.println(f1.containsAll(f));//false
+        // Check if subsetFruits is a subset of fruits
+        System.out.println("Is subsetFruits a subset of fruits?");
+        System.out.println(fruits.containsAll(subsetFruits)); // true
+
+        // Check if fruits is a subset of subsetFruits
+        System.out.println("Is fruits a subset of subsetFruits?");
+        System.out.println(subsetFruits.containsAll(fruits)); // false
     }
 }
