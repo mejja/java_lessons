@@ -1,133 +1,111 @@
 public class ArrayPopulation1b {
     public static void main(String[] args) {
-        boolean[] arrayBol   = new boolean[10];
-        byte[] arrayByte     = new byte[10];
-        short[] arrayShort   = new short[10];
-        char[] arrayChar     = new char[10];
-        int[] arrayInt       = new int[10];
-        float[] arrayFloat   = new float[10];
-        long[] arrayLong     = new long[10];
-        double[] arrayDouble = new double[10];
-        String[] arrayString = new String[10];
+        // Declare and initialize arrays of various data types with default size 10
+        boolean[] booleanArray   = new boolean[10];
+        byte[] byteArray         = new byte[10];
+        short[] shortArray       = new short[10];
+        char[] charArray         = new char[10];
+        int[] intArray           = new int[10];
+        float[] floatArray       = new float[10];
+        long[] longArray         = new long[10];
+        double[] doubleArray     = new double[10];
+        String[] stringArray     = new String[10];
 
-        // Default Values printing
-        System.out.println("Printing Default Arrays values:");
-        printArray("Boolean: ", arrayBol);
-        printArray("Byte: ", arrayByte);
-        printArray("Short: ", arrayShort);
-        printArray("Char: ", arrayChar);
-        printArray("Integer: ", arrayInt);
-        printArray("Float: ", arrayFloat);
-        printArray("Double: ", arrayDouble);
-        printArray("Long: ", arrayLong);
-        printArray("String: ", arrayString);
+        // Print default values of each array type
+        System.out.println("Printing Default Array Values:");
+        printArray("Boolean   : ", booleanArray);
+        printArray("Byte      : ", byteArray);
+        printArray("Short     : ", shortArray);
+        printArray("Char      : ", charArray);
+        printArray("Integer   : ", intArray);
+        printArray("Float     : ", floatArray);
+        printArray("Double    : ", doubleArray);
+        printArray("Long      : ", longArray);
+        printArray("String    : ", stringArray);
     }
 
-    public static void printArray(String prefix, boolean[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    // Overloaded methods to print arrays of different types with a label prefix
+
+    public static void printArray(String label, boolean[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, byte[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, byte[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, short[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, short[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, char[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, char[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            // Print Unicode null character explicitly
+            System.out.print(array[i] == '\u0000' ? "\\u0000" : array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, int[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, int[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, float[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, float[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, long[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, long[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, double[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, double[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i]);
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
-    public static void printArray(String prefix, String[] arrayToPrint) {
-        System.out.print(prefix);
-        System.out.print("[");
-        for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.print(arrayToPrint[i]);
-            if (i != arrayToPrint.length - 1) {
-                System.out.print(",");
-            }
+    public static void printArray(String label, String[] array) {
+        System.out.print(label + "[");
+        for (int i = 0; i < array.length; i++) {
+            // Print nulls explicitly for clarity
+            System.out.print(array[i] == null ? "null" : "\"" + array[i] + "\"");
+            if (i < array.length - 1) System.out.print(", ");
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 }
