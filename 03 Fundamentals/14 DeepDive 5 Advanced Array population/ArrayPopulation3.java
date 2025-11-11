@@ -1,42 +1,58 @@
 public class ArrayPopulation3b {
-    public static void main(String[]args){
-        int[] arrayInt = new int[10];
-        long[] arrayLong = new long[10];
 
-        //Write a for loop that assigns the position as the value of the index.
-        for(int i=0; i<arrayInt.length; i++)
-            arrayInt[i]=i;
+    public static void main(String[] args) {
+        // Declare and initialize an integer array of size 10
+        int[] intArray = new int[10];
 
+        // Declare and initialize a long array of size 10 (not used in this example)
+        long[] longArray = new long[10];
 
-        //calling print function
-        printArray("arrayInt: ",arrayInt);
-    }
-
-    public static void printArray(String prefix,int[] arrayToPrint){
-        System.out.print(prefix);
-        System.out.print("[");
-    
-        for (int i =0;i < arrayToPrint.length;i++) {
-            System.out.print(arrayToPrint[i]);
-            if(i != arrayToPrint.length-1){
-                System.out.print(",");
-            }        
+        // Populate intArray such that each element equals its index
+        for (int index = 0; index < intArray.length; index++) {
+            intArray[index] = index;
         }
-        System.out.print("]\n");
+
+        // Print the contents of intArray
+        printArray("intArray: ", intArray);
+
+        // Optionally, print longArray to show default values (all zeros)
+        // printArray("longArray: ", longArray);
     }
 
-    public static void printArray(String prefix,long[] arrayToPrint){
-        System.out.print(prefix);
-        System.out.print("[");
-    
-        for (int i =0;i < arrayToPrint.length;i++) {
-            
+    /**
+     * Prints the contents of an integer array in a formatted way.
+     * Example: intArray: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+     *
+     * @param label         A prefix label to print before the array
+     * @param arrayToPrint  The integer array to display
+     */
+    public static void printArray(String label, int[] arrayToPrint) {
+        System.out.print(label + "[");
+        for (int i = 0; i < arrayToPrint.length; i++) {
             System.out.print(arrayToPrint[i]);
-            if(i != arrayToPrint.length-1){
-                System.out.print(",");
-            }        
+            if (i < arrayToPrint.length - 1) {
+                System.out.print(", ");
+            }
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 
+    /**
+     * Prints the contents of a long array in a formatted way.
+     * Example: longArray: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+     *
+     * @param label         A prefix label to print before the array
+     * @param arrayToPrint  The long array to display
+     */
+    public static void printArray(String label, long[] arrayToPrint) {
+        System.out.print(label + "[");
+        for (int i = 0; i < arrayToPrint.length; i++) {
+            System.out.print(arrayToPrint[i]);
+            if (i < arrayToPrint.length - 1) {
+                System.out.print(", ");
+            }
+        }
+        System.out.println("]");
+    }
 }
+
