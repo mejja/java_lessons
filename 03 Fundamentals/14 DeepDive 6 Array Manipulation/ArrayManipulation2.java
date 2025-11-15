@@ -38,5 +38,4 @@ public class ArrayManipulation2 {
         }
 
         System.out.println("]"); // Close the array output
-    }
 }
