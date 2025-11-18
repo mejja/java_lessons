@@ -1,43 +1,54 @@
 public class ArrayManipulation3b {
-    public static void main(String[]args){
-        int[] array = {3,4,2,6,4,7,9,1};
-        int[] sortedArray =new int[array.length];
 
-        //copy value to sortedArray list
-        for(int i=0; i<array.length;i++)
-            sortedArray[i]=array[i];
-       
-        
-        printArray("array before swapping ",sortedArray);
-        System.out.println(" ");
+    public static void main(String[] args) {
+        // Original unsorted array
+        int[] array = {3, 4, 2, 6, 4, 7, 9, 1};
 
-        //sort the above array in ascendning order in-place. i.e. Using the same array
+        // Create a new array to hold the sorted copy
+        int[] sortedArray = new int[array.length];
+
+        // Copy values from the original array to the sorted array
+        for (int i = 0; i < array.length; i++) {
+            sortedArray[i] = array[i];
+        }
+
+        // Print the copied array before sorting
+        printArray("Array before sorting: ", sortedArray);
+        System.out.println();
+
+        // Sort the copied array in ascending order using selection sort
         for (int i = 0; i < sortedArray.length; i++) {
             for (int j = i + 1; j < sortedArray.length; j++) {
                 if (sortedArray[j] < sortedArray[i]) {
+                    // Swap elements if a smaller value is found
                     int temp = sortedArray[i];
                     sortedArray[i] = sortedArray[j];
                     sortedArray[j] = temp;
                 }
             }
         }
-        printArray("Array After sorting: ", array);
-        printArray("Sorted array: ", sortedArray);
 
+        // Print both the original and the sorted arrays
+        printArray("Original array (unchanged): ", array);
+        printArray("Sorted array              : ", sortedArray);
     }
-    public static void printArray(String prefix,int[] arrayToPrint){
-        System.out.print(prefix);
-        System.out.print("[");
-    
-        for (int i =0;i < arrayToPrint.length;i++) {
-            
-            System.out.print(arrayToPrint[i]);
-            if(i != arrayToPrint.length-1){
-            	System.out.print(",");
-            }
 
-            
+    /**
+     * Prints the contents of an integer array with a label prefix.
+     * Format: label [value1, value2, ..., valueN]
+     *
+     * @param prefix        A descriptive label to print before the array
+     * @param arrayToPrint  The integer array to display
+     */
+    public static void printArray(String prefix, int[] arrayToPrint) {
+        System.out.print(prefix + "[");
+        for (int i = 0; i < arrayToPrint.length; i++) {
+            System.out.print(arrayToPrint[i]);
+            // Add comma between elements except after the last one
+            if (i < arrayToPrint.length - 1) {
+                System.out.print(", ");
+            }
         }
-        System.out.print("]\n");
+        System.out.println("]");
     }
 }
