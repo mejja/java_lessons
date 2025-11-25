@@ -83,7 +83,7 @@ public class MyCollection<E> implements Collection<E> {
     public static void main(String[] args) {
         // Create an instance of MyCollection
         MyCollection<String> myCollection = new MyCollection<>();
-        
+
         // Test the methods
         System.out.println("Is the collection empty? " + myCollection.isEmpty());
         boolean added = myCollection.add("Hello"); // Try to add an element
