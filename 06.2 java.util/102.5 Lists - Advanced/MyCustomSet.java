@@ -1,15 +1,33 @@
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Set;
 
+/**
+ * A simple custom implementation of the Set interface using a List.
+ * Ensures no duplicate elements are stored.
+ *
+ * @param <E> the type of elements maintained by this set
+ */
 public class MyCustomSet<E> implements Set<E> {
-    private List<E> elements;
 
+    // Internal storage for elements
+    private final List<E> elements;
+
+    /**
+     * Constructs an empty MyCustomSet.
+     */
     public MyCustomSet() {
         elements = new ArrayList<>();
     }
 
+    /**
+     * Adds an element to the set if it does not already exist.
+     *
+     * @param e element to add
+     * @return true if the element was added, false if it already exists
+     */
     @Override
     public boolean add(E e) {
         if (contains(e)) {
@@ -18,82 +36,7 @@ public class MyCustomSet<E> implements Set<E> {
         return elements.add(e);
     }
 
-    @Override
-    public boolean remove(Object o) {
-        return elements.remove(o);
-    }
-
-    @Override
-    public boolean contains(Object o) {
-        return elements.contains(o);
-    }
-
-    @Override
-    public int size() {
-        return elements.size();
-    }
-
-    @Override
-    public boolean isEmpty() {
-        return elements.isEmpty();
-    }
-
-    @Override
-    public void clear() {
-        elements.clear();
-    }
-
-    @Override
-    public Iterator<E> iterator() {
-        return elements.iterator();
-    }
-
-    // Other methods from Set interface can be optionally overridden or left with default implementation
-
-    @Override
-    public boolean addAll(java.util.Collection<? extends E> c) {
-        boolean changed = false;
-        for (E e : c) {
-            if (add(e)) {
-                changed = true;
-            }
-        }
-        return changed;
-    }
-
-    @Override
-    public boolean retainAll(java.util.Collection<?> c) {
-        boolean changed = false;
-        Iterator<E> it = iterator();
-        while (it.hasNext()) {
-            if (!c.contains(it.next())) {
-                it.remove();
-                changed = true;
-            }
-        }
-        return changed;
-    }
-
-    @Override
-    public boolean removeAll(java.util.Collection<?> c) {
-        boolean changed = false;
-        Iterator<E> it = iterator();
-        while (it.hasNext()) {
-            if (c.contains(it.next())) {
-                it.remove();
-                changed = true;
-            }
-        }
-        return changed;
-    }
-
-    @Override
-    public boolean containsAll(java.util.Collection<?> c) {
-        for (Object o : c) {
-            if (!contains(o)) {
-                return false;
-            }
-        }
-        return true;
-    }
-}
+    /**
+     * Removes the specified element from the set if present.
+     *
+     * @param o element to remove
