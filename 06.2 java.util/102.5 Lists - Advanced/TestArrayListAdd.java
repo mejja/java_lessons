@@ -10,8 +10,10 @@ public class TestArrayListAdd{
 		list.add(1);
 		list.add(2);
 		list.add(3);
+
 		//Create a synchronized view of the list
 		List<Integer> synchronizedList = Collections.synchronizedList(list);
+
 		// Now you can safely access and modify the list from multiple threads
 		synchronized (synchronizedList){
 			for(Integer i : synchronizedList){
