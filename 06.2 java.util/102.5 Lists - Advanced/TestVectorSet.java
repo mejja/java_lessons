@@ -1,19 +1,16 @@
 import java.util.Vector;
-import java.util.Collections;
-import java.util.List;
 
-public class TestVectorSet{
-	public static void main(String[]  args){
-		//Vector
-		Vector<String> vector = new Vector<>();
-		vector.add("MAJOR");
-		vector.add("Kiema");
-		vector.add("MBANDI");
+/**
+ * Demonstrates the use of the set() method in a Vector.
+ * The set(index, element) method replaces the element at the specified index.
+ */
+public class TestVectorSet {
 
-		System.out.println("Vector before set:"+vector);
-		vector.set(1, "JAVA");
+    public static void main(String[] args) {
+        // Create a new Vector of Strings
+        Vector<String> vector = new Vector<>();
 
-		//After setting second element
-		System.out.println("Vector After set:"+vector);
-	}
-}
+        // Add elements to the Vector
+        vector.add("MAJOR");
+        vector.add("Kiema");
+        vector.add("MBANDI");
