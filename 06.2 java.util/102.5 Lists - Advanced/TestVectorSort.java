@@ -1,15 +1,20 @@
-import java.util.Vector;
 import java.util.Collections;
-import java.util.List;
+import java.util.Vector;
 
-public class TestVectorSort{
-	public static void main(String[] args){
-		Long[] numerals ={10L,5L,7L,2L,8L};
-		Vector<Long> stack= new Vector<>();
+/**
+ * Demonstrates sorting of a Vector in Java.
+ */
+public class TestVectorSort {
 
-		Collections.addAll(stack, numerals);
-		System.out.println("Unsorted Vector:"+stack);
-		Collections.sort(stack);
-		System.out.println("Sorted Vector:"+stack);
-	}
-}
+    public static void main(String[] args) {
+        // Initialize an array of Long numbers
+        Long[] numerals = {10L, 5L, 7L, 2L, 8L};
+
+        // Create a Vector to store the numbers
+        Vector<Long> stack = new Vector<>();
+
+        // Add all elements from the array to the Vector
+        Collections.addAll(stack, numerals);
+
+        // Print the Vector before sorting
+        System.out.println("Unsorted Vector: " + stack);
