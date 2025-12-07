@@ -1,19 +1,27 @@
 import java.util.NavigableSet;
 import java.util.TreeSet;
 
-public class NavigableSet2{
-	public static void main(String[] args){
-		NavigableSet<Long> navigableSet = new TreeSet<>();//instance
+/**
+ * Demonstrates basic usage of NavigableSet using TreeSet in Java.
+ * Shows how to add elements and retrieve the first (lowest) element.
+ */
+public class NavigableSet2 {
 
-		navigableSet.add(88L);
-		navigableSet.add(11L);
-		navigableSet.add(77L);
-		navigableSet.add(22L);
-		navigableSet.add(99L);
+    public static void main(String[] args) {
+        // Create a NavigableSet of Long values using TreeSet
+        NavigableSet<Long> navigableSet = new TreeSet<>();
 
-		//Getting the 1st element in the list
-		System.out.println("NavigableSet: "+navigableSet);
-		System.out.println("The First Item in List IS: "+navigableSet.first());
-		
-	}
+        // Add elements to the NavigableSet
+        navigableSet.add(88L);
+        navigableSet.add(11L);
+        navigableSet.add(77L);
+        navigableSet.add(22L);
+        navigableSet.add(99L);
+
+        // Print the NavigableSet (automatically sorted in ascending order)
+        System.out.println("NavigableSet: " + navigableSet);
+
+        // Retrieve and print the first (lowest) element
+        System.out.println("The First Item in the Set is: " + navigableSet.first());
+    }
 }
