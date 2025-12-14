@@ -1,19 +1,28 @@
-import java.util.*;
- 
-public class TestSort{
-	public static void main(String[] args){
-		ArrayList<String> unsortedArray = new ArrayList<>();
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
-		unsortedArray.add("Cherry");
+/**
+ * Demonstrates sorting of an ArrayList of Strings in Java.
+ */
+public class TestSort {
+
+    public static void main(String[] args) {
+        // Create an ArrayList to hold String elements
+        List<String> unsortedArray = new ArrayList<>();
+
+        // Add elements to the ArrayList
+        unsortedArray.add("Cherry");
         unsortedArray.add("Apple");
         unsortedArray.add("Banana");
 
-    //print the unsorted arrayList
-    System.out.println(unsortedArray);
+        // Print the ArrayList before sorting
+        System.out.println("Unsorted ArrayList: " + unsortedArray);
 
-     Collections.sort(unsortedArray);
+        // Sort the ArrayList in ascending (natural) order
+        Collections.sort(unsortedArray);
 
-    //sorted arrayList
-    System.out.println(unsortedArray);
-	}
+        // Print the ArrayList after sorting
+        System.out.println("Sorted ArrayList: " + unsortedArray);
+    }
 }
