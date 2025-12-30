@@ -1,12 +1,23 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Demonstrates the use of generics with List and ArrayList in Java.
+ */
 public class GenericsEg1 {
+
     public static void main(String[] args) {
-   	 List<String> strings = new ArrayList<String>();
-   	 strings.add("1");
-   	 strings.add("3");
-   	 strings.add("3");
-   	 System.out.println("strings = "+strings);
+
+        // Create a List of String using generics (type-safe)
+        List<String> strings = new ArrayList<>();
+
+        // Add String elements to the list
+        strings.add("1");
+        strings.add("3");
+        strings.add("3");  // Duplicate values are allowed in a List
+
+        // Print the contents of the list
+        System.out.println("strings = " + strings);
     }
 }
+
