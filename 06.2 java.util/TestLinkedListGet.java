@@ -1,15 +1,18 @@
-import java.util.LinkedList;
+import java.util.LinkedList; // Import LinkedList class from java.util package
 
-public class TestLinkedListGet{
-	public static void main(String[] args){
-		LinkedList<String> stack = new LinkedList<>();
+public class TestLinkedListGet {
 
-		//Adding elements
-		stack.push("Zero");
-		stack.push("First");
-		stack.push("Second");
+    public static void main(String[] args) {
 
-		//Getting stack element at index 1
-		System.out.println("Stack size: "+ stack.get(1));
-	}
-}
+        // Create a LinkedList to be used as a stack (LIFO structure)
+        LinkedList<String> stack = new LinkedList<>();
+
+        // Push elements onto the stack
+        // push() inserts elements at the head (index 0) of the LinkedList
+        stack.push("Zero");   // Stack: [Zero]
+        stack.push("First");  // Stack: [First, Zero]
+        stack.push("Second"); // Stack: [Second, First, Zero]
+
+        // Retrieve the element at index 1 without removing it
+        // get(1) returns the second element in the list
+        System.out.print
